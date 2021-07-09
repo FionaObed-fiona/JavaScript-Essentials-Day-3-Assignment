@@ -1,0 +1,38 @@
+Hello sir i have made a palindrome word checker we have to right a word in the
+text box below and submit it then it will show that the text is Palindrome or not 
+you can also run the below code in your device you can check it if it wrong or not.
+ 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fionation</title>
+</head>
+<body>
+    Enter any word i can check it if it is Palindrome or not.<br><br>
+    Enter Any String :<input type="text" id="a"><br><br>
+    Result String :<input type="text" id="b"><br><br>
+    <input type="Submit" onclick="pal()"><br><br>
+    <script type="text/javascript">
+    function pal()
+       {
+    
+        var x=document.getElementById("a").value;
+            var y="";
+            for(i=x.length-1;i>=0;i--)
+                {
+                     y=y+x[i];
+                }
+            if(x==y)
+               document.getElementById("b").value=y+" is a Palindrome ";
+            else
+                document.getElementById("b").value=y+" is not a Palindrome ";
+       }
+       </script>
+</body>
+</html>
+ 
+Thank you
+
